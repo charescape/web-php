@@ -6,17 +6,17 @@
 */
 $LANGUAGES = [
     'en' => 'English',
-    'de' => 'German',
-    'es' => 'Spanish',
-    'fr' => 'French',
-    'it' => 'Italian',
-    'ja' => 'Japanese',
-    'pl' => 'Polish',
-    'pt_BR' => 'Brazilian Portuguese',
-    'ro' => 'Romanian',
-    'ru' => 'Russian',
-    'tr' => 'Turkish',
-    'uk' => 'Ukrainian',
+//    'de' => 'German',
+//    'es' => 'Spanish',
+//    'fr' => 'French',
+//    'it' => 'Italian',
+//    'ja' => 'Japanese',
+//    'pl' => 'Polish',
+//    'pt_BR' => 'Brazilian Portuguese',
+//    'ro' => 'Romanian',
+//    'ru' => 'Russian',
+//    'tr' => 'Turkish',
+//    'uk' => 'Ukrainian',
     'zh' => 'Chinese (Simplified)',
 ];
 
