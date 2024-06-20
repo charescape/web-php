@@ -61,12 +61,12 @@ if (!isset($config["languages"])) {
  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $MYSITE ?>favicon-16x16.png?v=2">
  <link rel="shortcut icon" href="<?php echo $MYSITE ?>favicon.ico?v=2">
 
- <link rel="search" type="application/opensearchdescription+xml" href="http://php.net/phpnetimprovedsearch.src" title="Add PHP.net search">
+ <!--<link rel="search" type="application/opensearchdescription+xml" href="http://php.net/phpnetimprovedsearch.src" title="Add PHP.net search">-->
  <link rel="alternate" type="application/atom+xml" href="<?php echo $MYSITE ?>releases/feed.php" title="PHP Release feed">
  <link rel="alternate" type="application/atom+xml" href="<?php echo $MYSITE ?>feed.atom" title="PHP: Hypertext Preprocessor">
 
 <?php if (isset($_SERVER['BASE_PAGE'])): ?>
- <link rel="canonical" href="https://www.php.net/<?php echo $_SERVER['BASE_PAGE']?>">
+ <link rel="canonical" href="<?php echo $MYSITE ?><?php echo $_SERVER['BASE_PAGE']?>">
 <?php if ($shortname): ?>
  <link rel="shorturl" href="<?php echo $shorturl ?>">
  <link rel="alternate" href="<?php echo $shorturl ?>" hreflang="x-default">
