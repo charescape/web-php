@@ -449,7 +449,7 @@ function site_header(string $title = 'Hypertext Preprocessor', array $config = [
 
     // shorturl; http://wiki.snaplog.com/short_url
     if (isset($_SERVER['BASE_PAGE']) && $shortname = get_shortname($_SERVER["BASE_PAGE"])) {
-        $shorturl = "https://www.php.net/" . $shortname;
+        $shorturl = $MYSITE . $shortname;
     }
 
     require __DIR__ . "/header.inc";
