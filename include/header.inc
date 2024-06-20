@@ -24,7 +24,7 @@ foreach($css_files as $filename) {
 }
 
 if (isset($shortname) && $shortname) {
-    header("Link: <$shorturl>; rel=shorturl");
+    // header("Link: <$shorturl>; rel=shorturl");
 }
 
 if ($config["cache"]) {
@@ -67,7 +67,7 @@ if (!isset($config["languages"])) {
 
 <?php if (isset($_SERVER['BASE_PAGE'])): ?>
  <link rel="canonical" href="<?php echo $MYSITE ?><?php echo $_SERVER['BASE_PAGE']?>">
-<?php if ($shortname): ?>
+<?php if (0 && $shortname): ?>
  <link rel="shorturl" href="<?php echo $shorturl ?>">
  <link rel="alternate" href="<?php echo $shorturl ?>" hreflang="x-default">
 <?php endif ?>
