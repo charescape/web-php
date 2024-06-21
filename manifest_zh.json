@@ -1,0 +1,16 @@
+{
+  "name": "PHP中文手册",
+  "short_name": "PHP中文手册",
+  "lang": "zh",
+  "start_url": "/zh/",
+  "icons": [
+    {
+      "src": "https://docs.phplang.net/favicon-196x196.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#4f5b93",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
