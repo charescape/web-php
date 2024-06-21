@@ -1,2 +1,5 @@
 # iCalendar needs CRLF line endings, Git index and working tree will have CRLF
 /backend/events/* -text
+
+*.php  text eol=lf diff=php
+*.inc  text eol=lf diff=php
