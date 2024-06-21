@@ -65,8 +65,31 @@ if (!isset($config["languages"])) {
  <link rel="alternate" type="application/atom+xml" href="<?php echo $MYSITE ?>releases/feed.php" title="PHP Release feed">
  <link rel="alternate" type="application/atom+xml" href="<?php echo $MYSITE ?>feed.atom" title="PHP: Hypertext Preprocessor">
 
+ <meta name="mobile-web-app-capable" content="yes"/>
+ <meta name="apple-mobile-web-app-capable" content="yes"/>
+ <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+ <meta name="apple-mobile-web-app-title" content="PHP: <?php echo $title ?>"/>
+ <meta name="msapplication-TileImage" content="<?php echo $MYSITE ?>favicon-196x196.png?v=2"/>
+ <meta name="application-name" content="<?php echo ($lang === 'zh' ? 'PHP中文手册' : 'PHP Manual') ?>"/>
+
+<?php if ($lang === 'zh'): ?>
+ <link rel="manifest" href="/manifest_zh.json"/>
+<?php elseif ($lang === 'en'): ?>
+ <link rel="manifest" href="/manifest_en.json"/>
+<?php endif ?>
+
 <?php if (isset($_SERVER['BASE_PAGE'])): ?>
  <link rel="canonical" href="<?php echo $MYSITE ?><?php echo $_SERVER['BASE_PAGE']?>">
+
+ <meta property="og:type" content="website"/>
+ <meta property="og:url" content="<?php echo $MYSITE ?><?php echo $_SERVER['BASE_PAGE']?>"/>
+ <meta property="og:title" content="PHP: <?php echo $title ?>"/>
+ <meta property="og:image" content="<?php echo $MYSITE ?>favicon-196x196.png?v=2"/>
+ <meta property="og:image:type" content="image/png"/>
+ <meta property="og:image:width" content="196"/>
+ <meta property="og:image:height" content="196"/>
+ <meta property="og:site_name" content="<?php echo ($lang === 'zh' ? 'PHP中文手册' : 'PHP Manual') ?>"/>
+
 <?php if (0 && $shortname): ?>
  <link rel="shorturl" href="<?php echo $shorturl ?>">
  <link rel="alternate" href="<?php echo $shorturl ?>" hreflang="x-default">
